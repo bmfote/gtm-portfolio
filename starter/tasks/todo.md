@@ -1,13 +1,33 @@
-# TODO
+# TODO — GTM Portfolio Build
 
-## Getting Started
+## Phase 2 — Component Library
+- [ ] SectionLabel
+- [ ] TagPill
+- [ ] CalloutBox
+- [ ] RuleCard
+- [ ] StatBlock
+- [ ] ToolCard
+- [ ] ContactSplit
+- [ ] ProjectCard
+- [ ] ChevronFlow (animated)
+- [ ] WaterfallDiagram (SVG animated)
+- [ ] AsyncDiagram (ABM-specific, 4-path)
+- [ ] Fix Navigation (remove blog link, update brand name)
+- [ ] Update layout.tsx (site name + metadata)
 
-- [ ] Replace site name in `app/layout.tsx`
-- [ ] Replace hero content in `app/page.tsx`
-- [ ] Replace nav brand in `components/Navigation.tsx`
-- [ ] Update `SITE_URL` in `.env.local`
-- [ ] Add `ANTHROPIC_API_KEY` to `.env.local` (optional, for chat widget)
-- [ ] Add `NEXT_PUBLIC_POSTHOG_KEY` to `.env.local` (optional, for analytics)
-- [ ] Delete `content/blog/hello-world.md` and write your first real post
-- [ ] Update knowledge base in `app/api/chat/route.ts`
-- [ ] Deploy to Vercel
+## Phase 3 — Home Page
+- [ ] Rebuild page.tsx: hero + projects grid + contact split
+
+## Phase 4 — Project Pages
+- [ ] Create app/projects/[slug]/page.tsx template
+- [ ] Create content/projects/ data files
+- [ ] ABM Prospecting Machine page
+- [ ] Champion Job Change Tracker page
+- [ ] Icebreaker SDR page
+- [ ] Next Best Action System page (NBA content arriving tomorrow)
+
+## Phase 5 — Polish + Domain + Resume
+- [ ] Custom domain
+- [ ] Resume PDF links
+- [ ] Final aesthetic review (terminal vs. alternative style)
+- [ ] npm run build — final check before launch

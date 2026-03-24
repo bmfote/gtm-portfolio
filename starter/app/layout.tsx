@@ -6,14 +6,14 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Your Site Name',
-    template: '%s | Your Site Name',
+    default: 'Matthew Batterson — GTM Engineer',
+    template: '%s | Matthew Batterson',
   },
-  description: 'A website with soul. Built with Next.js, Tailwind, and a 90% free stack.',
+  description: 'I build GTM systems. The kind that run while you sleep.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    siteName: 'Your Site Name',
+    siteName: 'Matthew Batterson',
   },
 }
 

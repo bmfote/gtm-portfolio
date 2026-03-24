@@ -28,25 +28,26 @@ export function Navigation() {
           fontWeight: 700,
           color: 'var(--accent)',
           textDecoration: 'none',
+          fontFamily: 'var(--font-mono)',
         }}
       >
-        yoursite
+        matthew batterson
       </Link>
 
       <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
-        <Link
-          href="/blog"
-          style={{ fontSize: 14, color: 'var(--text-secondary)', textDecoration: 'none' }}
-        >
-          blog
-        </Link>
         <a
-          href="https://github.com"
+          href="mailto:battersonsales@gmail.com"
+          style={{ fontSize: 14, color: 'var(--text-secondary)', textDecoration: 'none', fontFamily: 'var(--font-mono)' }}
+        >
+          contact
+        </a>
+        <a
+          href="https://linkedin.com/in/matthewbatterson"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ fontSize: 14, color: 'var(--text-secondary)', textDecoration: 'none' }}
+          style={{ fontSize: 14, color: 'var(--text-secondary)', textDecoration: 'none', fontFamily: 'var(--font-mono)' }}
         >
-          github
+          linkedin
         </a>
       </div>
     </nav>

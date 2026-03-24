@@ -1,0 +1,145 @@
+'use client'
+
+import Link from 'next/link'
+
+interface ProjectCardProps {
+  slug: string
+  title: string
+  oneliner: string
+  stack: string[]
+  tags: string[]
+  nodeCount?: number
+  workflowCount?: number
+}
+
+export function ProjectCard({
+  slug,
+  title,
+  oneliner,
+  stack,
+  tags,
+  nodeCount,
+  workflowCount,
+}: ProjectCardProps) {
+  return (
+    <Link
+      href={`/projects/${slug}`}
+      style={{ textDecoration: 'none' }}
+    >
+      <div
+        style={{
+          background: 'var(--canvas-subtle)',
+          border: '1px solid var(--canvas-border)',
+          borderRadius: 10,
+          padding: '28px 28px 24px',
+          fontFamily: 'var(--font-mono)',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 16,
+          cursor: 'pointer',
+          transition: 'border-color 0.15s, box-shadow 0.15s',
+        }}
+        onMouseEnter={e => {
+          const el = e.currentTarget as HTMLDivElement
+          el.style.borderColor = 'var(--accent)'
+          el.style.boxShadow = '0 0 20px rgba(88,166,255,0.08)'
+        }}
+        onMouseLeave={e => {
+          const el = e.currentTarget as HTMLDivElement
+          el.style.borderColor = 'var(--canvas-border)'
+          el.style.boxShadow = 'none'
+        }}
+      >
+        {/* Tags */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          {tags.map(tag => (
+            <span
+              key={tag}
+              style={{
+                fontSize: 10,
+                fontWeight: 600,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                color: 'var(--accent)',
+                border: '1px solid var(--accent)',
+                borderRadius: 3,
+                padding: '2px 7px',
+              }}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        {/* Title + oneliner */}
+        <div>
+          <h3
+            style={{
+              fontSize: 18,
+              fontWeight: 700,
+              color: 'var(--text-primary)',
+              margin: '0 0 8px',
+              lineHeight: 1.3,
+            }}
+          >
+            {title}
+          </h3>
+          <p
+            style={{
+              fontSize: 13,
+              color: 'var(--text-secondary)',
+              margin: 0,
+              lineHeight: 1.65,
+            }}
+          >
+            {oneliner}
+          </p>
+        </div>
+
+        {/* Stack pills */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+          {stack.map(tool => (
+            <span
+              key={tool}
+              style={{
+                fontSize: 11,
+                color: 'var(--text-secondary)',
+                background: 'rgba(255,255,255,0.04)',
+                border: '1px solid var(--canvas-border)',
+                borderRadius: 4,
+                padding: '2px 8px',
+              }}
+            >
+              {tool}
+            </span>
+          ))}
+        </div>
+
+        {/* Metrics footer */}
+        {(nodeCount || workflowCount) && (
+          <div
+            style={{
+              display: 'flex',
+              gap: 20,
+              paddingTop: 12,
+              borderTop: '1px solid var(--canvas-border)',
+              marginTop: 'auto',
+            }}
+          >
+            {nodeCount && (
+              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+                <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{nodeCount}</span> nodes
+              </span>
+            )}
+            {workflowCount && (
+              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+                <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{workflowCount}</span> workflows
+              </span>
+            )}
+          </div>
+        )}
+      </div>
+    </Link>
+  )
+}

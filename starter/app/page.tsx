@@ -1,79 +1,166 @@
-import Link from 'next/link'
-import { getAllPosts } from '@/lib/posts'
-import { PostCard } from '@/components/PostCard'
-import path from 'path'
+import { SectionLabel } from '@/components/SectionLabel'
+import { ProjectCard } from '@/components/ProjectCard'
+import { ContactSplit } from '@/components/ContactSplit'
 
-const CONTENT_DIR = path.join(process.cwd(), 'content/blog')
+const projects = [
+  {
+    slug: 'abm-prospecting-machine',
+    title: 'ABM Prospecting Machine',
+    oneliner: 'You click one button. 5–20 minutes later, enriched leads are in your CRM.',
+    stack: ['n8n', 'Pronto', 'Instantly', 'Claude'],
+    tags: ['4-PATH ASYNC', 'CONFIG-AS-CODE', 'WEBHOOK CHAIN'],
+    nodeCount: 21,
+  },
+  {
+    slug: 'champion-job-change-tracker',
+    title: 'Champion Job Change Tracker',
+    oneliner: 'Monday morning sync. Real-time detection. AI scores every change. Hot ones go straight to sequence.',
+    stack: ['n8n', 'Pronto', 'Airtable', 'Claude'],
+    tags: ['JOB CHANGE SIGNAL', 'AI CLASSIFICATION', 'HOT/NURTURE/NOT_NOW'],
+    nodeCount: 27,
+    workflowCount: 3,
+  },
+  {
+    slug: 'icebreaker-sdr',
+    title: 'Icebreaker SDR',
+    oneliner: 'Signal detected Monday 9am. Lead enrolled in outbound sequence before noon. No human touchpoints.',
+    stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
+    tags: ['SIGNAL-TRIGGERED', 'DATA THREAD', '3-LAYER AI'],
+    nodeCount: 49,
+    workflowCount: 4,
+  },
+  {
+    slug: 'next-best-action',
+    title: 'Next Best Action System',
+    oneliner: 'Multi-signal scoring, governance gates, and a ranked daily action queue. Reps work the right accounts, in the right order, every day.',
+    stack: ['Clay'],
+    tags: ['MULTI-SIGNAL', 'GOVERNANCE-GATED', 'CLAY'],
+  },
+]
+
+const contactLinks = [
+  { label: 'battersonsales@gmail.com', href: 'mailto:battersonsales@gmail.com' },
+  { label: 'linkedin.com/in/matthewbatterson', href: 'https://linkedin.com/in/matthewbatterson', external: true },
+]
 
 export default function Home() {
-  const posts = getAllPosts(CONTENT_DIR).slice(0, 3)
-
   return (
-    <div className="container" style={{ paddingTop: 80, paddingBottom: 80 }}>
+    <div className="container" style={{ paddingTop: 80, paddingBottom: 100 }}>
+
       {/* Hero */}
-      <section style={{ marginBottom: 80 }}>
-        <p style={{ color: 'var(--green)', fontSize: 14, marginBottom: 8 }}>
-          <span className="terminal-prompt">cat ~/about.md</span>
+      <section style={{ marginBottom: 100 }}>
+        <p style={{ color: 'var(--green)', fontSize: 13, marginBottom: 12, fontFamily: 'var(--font-mono)' }}>
+          <span className="terminal-prompt">whoami</span>
         </p>
-        <h1 style={{ fontSize: 40, fontWeight: 700, color: 'var(--text-primary)', lineHeight: 1.2, margin: '0 0 16px' }}>
-          Your Name
+        <h1
+          style={{
+            fontSize: 'clamp(32px, 5vw, 52px)',
+            fontWeight: 700,
+            color: 'var(--text-primary)',
+            lineHeight: 1.15,
+            margin: '0 0 20px',
+            fontFamily: 'var(--font-mono)',
+          }}
+        >
+          I build GTM systems.<br />
+          <span style={{ color: 'var(--accent)' }}>The kind that run while you sleep.</span>
         </h1>
-        <p style={{ fontSize: 18, color: 'var(--text-secondary)', maxWidth: 560, lineHeight: 1.6 }}>
-          A short description of who you are and what you do.
-          Replace this with your own intro. Make it real.
+        <p
+          style={{
+            fontSize: 16,
+            color: 'var(--text-secondary)',
+            maxWidth: 560,
+            lineHeight: 1.75,
+            margin: '0 0 32px',
+            fontFamily: 'var(--font-mono)',
+          }}
+        >
+          GTM Engineer based in Lenexa, KS. I wire together AI, automation, and signal detection
+          into systems that find, qualify, and engage the right leads — without reps lifting a finger.
         </p>
-        <div style={{ display: 'flex', gap: 12, marginTop: 24 }}>
-          <Link
-            href="/blog"
+
+        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+          <a
+            href="#projects"
             style={{
               padding: '10px 24px',
-              borderRadius: 8,
-              backgroundColor: 'var(--accent)',
-              color: 'white',
-              fontSize: 14,
-              fontWeight: 600,
+              borderRadius: 6,
+              background: 'var(--accent)',
+              color: '#0D1117',
+              fontSize: 13,
+              fontWeight: 700,
               textDecoration: 'none',
+              fontFamily: 'var(--font-mono)',
+              letterSpacing: '0.04em',
             }}
           >
-            Read the blog
-          </Link>
+            see the systems →
+          </a>
           <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:battersonsales@gmail.com"
             style={{
               padding: '10px 24px',
-              borderRadius: 8,
+              borderRadius: 6,
               border: '1px solid var(--canvas-border)',
               color: 'var(--text-primary)',
-              fontSize: 14,
+              fontSize: 13,
               textDecoration: 'none',
+              fontFamily: 'var(--font-mono)',
             }}
           >
-            GitHub
+            get in touch
           </a>
         </div>
       </section>
 
-      {/* Recent posts */}
-      {posts.length > 0 && (
-        <section>
-          <h2 style={{ fontSize: 20, fontWeight: 600, color: 'var(--text-primary)', marginBottom: 24 }}>
-            Recent posts
-          </h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-            {posts.map((post) => (
-              <PostCard key={post.slug} post={post} />
-            ))}
-          </div>
-          <Link
-            href="/blog"
-            style={{ display: 'inline-block', marginTop: 24, color: 'var(--accent)', fontSize: 14 }}
-          >
-            View all posts &rarr;
-          </Link>
-        </section>
-      )}
+      {/* Projects grid */}
+      <section id="projects" style={{ marginBottom: 100 }}>
+        <SectionLabel>GTM Systems</SectionLabel>
+        <h2
+          style={{
+            fontSize: 28,
+            fontWeight: 700,
+            color: 'var(--text-primary)',
+            margin: '0 0 8px',
+            fontFamily: 'var(--font-mono)',
+          }}
+        >
+          Built. Running. Measurable.
+        </h2>
+        <p
+          style={{
+            fontSize: 14,
+            color: 'var(--text-secondary)',
+            margin: '0 0 40px',
+            fontFamily: 'var(--font-mono)',
+            lineHeight: 1.7,
+          }}
+        >
+          Four systems, each solving a real pipeline problem. Every node documented.
+        </p>
+
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gap: 20,
+          }}
+        >
+          {projects.map(project => (
+            <ProjectCard key={project.slug} {...project} />
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section>
+        <ContactSplit
+          headline="Let's build something that runs while you sleep."
+          subtext="I'm open to GTM Engineering, Revenue Operations, and automation consulting roles. If you're building a serious outbound motion, let's talk."
+          links={contactLinks}
+        />
+      </section>
+
     </div>
   )
 }
