@@ -12,7 +12,11 @@ export const nextBestAction: ProjectData = {
     { icon: '🏗️', name: 'Clay', description: 'Multi-signal scoring engine, governance logic, and daily queue generation' },
   ],
 
-  tags: ['MULTI-SIGNAL', 'GOVERNANCE-GATED', 'CLAY'],
+  tags: [
+    { label: 'PIPELINE PRIORITIZATION', color: 'teal' },
+    { label: 'SCORING ENGINE', color: 'green' },
+    { label: 'LIVE ICP CONFIG', color: 'red' },
+  ],
 
   chevronSteps: ['Signals Weighted', 'Governance Checked', 'Queue Ranked', 'Rep Notified'],
 

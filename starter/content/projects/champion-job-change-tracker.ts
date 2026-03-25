@@ -17,7 +17,11 @@ export const championJobChangeTracker: ProjectData = {
     { icon: '🧠', name: 'Claude', description: 'HOT / NURTURE / NOT_NOW scoring with reasoning + first-message draft' },
   ],
 
-  tags: ['JOB CHANGE SIGNAL', 'AI CLASSIFICATION', 'HOT/NURTURE/NOT_NOW'],
+  tags: [
+    { label: 'OUTBOUND', color: 'teal' },
+    { label: 'JOB CHANGE SIGNAL', color: 'orange' },
+    { label: 'LIVE ICP CONFIG', color: 'red' },
+  ],
   nodeCount: 27,
   workflowCount: 3,
 

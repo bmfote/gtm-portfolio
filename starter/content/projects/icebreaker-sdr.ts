@@ -2,7 +2,7 @@ import { ProjectData } from './types'
 
 export const icebreakerSDR: ProjectData = {
   slug: 'icebreaker-sdr',
-  title: 'Icebreaker SDR',
+  title: 'Growth-Triggered Icebreaker',
   oneliner:
     'Signal detected Monday 9am. Lead enrolled in outbound sequence before noon. No human touchpoints.',
   problem:
@@ -18,7 +18,11 @@ export const icebreakerSDR: ProjectData = {
     { icon: '🚀', name: 'LaGrowthMachine', description: 'Outbound sequence enrollment via API' },
   ],
 
-  tags: ['SIGNAL-TRIGGERED', 'DATA THREAD', '3-LAYER AI'],
+  tags: [
+    { label: 'OUTBOUND', color: 'teal' },
+    { label: 'GROWTH SIGNAL', color: 'orange' },
+    { label: 'LIVE ICP CONFIG', color: 'red' },
+  ],
   nodeCount: 49,
   workflowCount: 4,
 

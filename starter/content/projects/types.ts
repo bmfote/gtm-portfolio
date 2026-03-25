@@ -36,6 +36,13 @@ export interface WorkflowBlock {
   steps: string[]
 }
 
+export type TagColor = 'teal' | 'green' | 'red' | 'orange'
+
+export interface Tag {
+  label: string
+  color: TagColor
+}
+
 export interface ProjectData {
   slug: string
   title: string
@@ -43,7 +50,7 @@ export interface ProjectData {
   problem: string
   callout?: string
   stack: ToolCardData[]
-  tags: string[]
+  tags: Tag[]
   nodeCount?: number
   workflowCount?: number
   chevronSteps: string[]

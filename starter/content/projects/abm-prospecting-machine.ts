@@ -16,7 +16,11 @@ export const abmProspectingMachine: ProjectData = {
     { icon: '🧠', name: 'Claude', description: 'ICP config evaluation and field normalization logic' },
   ],
 
-  tags: ['4-PATH ASYNC', 'CONFIG-AS-CODE', 'WEBHOOK CHAIN'],
+  tags: [
+    { label: 'OUTBOUND', color: 'teal' },
+    { label: 'PIPELINE GENERATION', color: 'green' },
+    { label: 'LIVE ICP CONFIG', color: 'red' },
+  ],
   nodeCount: 21,
 
   chevronSteps: ['Trigger Fired', 'Companies Received', 'Leads Enriched', 'CRM Delivered'],

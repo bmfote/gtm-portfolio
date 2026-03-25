@@ -8,7 +8,11 @@ const projects = [
     title: 'ABM Prospecting Machine',
     oneliner: 'You click one button. 5–20 minutes later, enriched leads are in your CRM.',
     stack: ['n8n', 'Pronto', 'Instantly', 'Claude'],
-    tags: ['4-PATH ASYNC', 'CONFIG-AS-CODE', 'WEBHOOK CHAIN'],
+    tags: [
+      { label: 'OUTBOUND', color: 'teal' as const },
+      { label: 'PIPELINE GENERATION', color: 'green' as const },
+      { label: 'LIVE ICP CONFIG', color: 'red' as const },
+    ],
     nodeCount: 21,
   },
   {
@@ -16,16 +20,24 @@ const projects = [
     title: 'Champion Job Change Tracker',
     oneliner: 'Monday morning sync. Real-time detection. AI scores every change. Hot ones go straight to sequence.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude'],
-    tags: ['JOB CHANGE SIGNAL', 'AI CLASSIFICATION', 'HOT/NURTURE/NOT_NOW'],
+    tags: [
+      { label: 'OUTBOUND', color: 'teal' as const },
+      { label: 'JOB CHANGE SIGNAL', color: 'orange' as const },
+      { label: 'LIVE ICP CONFIG', color: 'red' as const },
+    ],
     nodeCount: 27,
     workflowCount: 3,
   },
   {
     slug: 'icebreaker-sdr',
-    title: 'Icebreaker SDR',
+    title: 'Growth-Triggered Icebreaker',
     oneliner: 'Signal detected Monday 9am. Lead enrolled in outbound sequence before noon. No human touchpoints.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
-    tags: ['SIGNAL-TRIGGERED', 'DATA THREAD', '3-LAYER AI'],
+    tags: [
+      { label: 'OUTBOUND', color: 'teal' as const },
+      { label: 'GROWTH SIGNAL', color: 'orange' as const },
+      { label: 'LIVE ICP CONFIG', color: 'red' as const },
+    ],
     nodeCount: 49,
     workflowCount: 4,
   },
@@ -34,7 +46,11 @@ const projects = [
     title: 'Next Best Action System',
     oneliner: 'Multi-signal scoring, governance gates, and a ranked daily action queue. Reps work the right accounts, in the right order, every day.',
     stack: ['Clay'],
-    tags: ['MULTI-SIGNAL', 'GOVERNANCE-GATED', 'CLAY'],
+    tags: [
+      { label: 'PIPELINE PRIORITIZATION', color: 'teal' as const },
+      { label: 'SCORING ENGINE', color: 'green' as const },
+      { label: 'LIVE ICP CONFIG', color: 'red' as const },
+    ],
   },
 ]
 
