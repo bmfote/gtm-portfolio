@@ -2,6 +2,7 @@ const TAG_COLORS: Record<string, string> = {
   amber: '#D29922',
   blue: '#58A6FF',
   green: '#3FB950',
+  red: '#F85149',
   muted: '#8B949E',
 }
 

@@ -14,8 +14,8 @@ export const nextBestAction: ProjectData = {
   ],
 
   tags: [
-    { label: 'PIPELINE PRIORITY', color: 'muted' },
-    { label: 'SCORING ENGINE', color: 'muted' },
+    { label: 'PIPELINE PRIORITY', color: 'red' },
+    { label: 'ICP SCORING', color: 'muted' },
   ],
 
   chevronSteps: ['ICP Scored', 'Priority Ranked', 'Risk Flagged', 'Rep Executes'],
