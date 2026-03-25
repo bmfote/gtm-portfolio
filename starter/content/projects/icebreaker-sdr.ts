@@ -87,6 +87,9 @@ export const icebreakerSDR: ProjectData = {
     },
   ],
 
+  loomId: '92c9d140e166462f8edcf96d3529fb84',
+  loomAspect: '70.22106631989598%',
+
   diagramType: 'waterfall',
   waterfallNodes: [
     { label: 'WF1 fires Monday 9am', sublabel: 'hiring + growth signals' },
