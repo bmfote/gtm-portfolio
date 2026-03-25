@@ -78,6 +78,7 @@ export const inboundICPRouter: ProjectData = {
     },
   ],
 
+  diagramSideBySide: true,
   diagramType: 'waterfall',
   waterfallNodes: [
     { label: 'Inbound form submitted' },

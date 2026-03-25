@@ -196,37 +196,71 @@ export default async function ProjectPage({
           The execution path
         </h2>
 
-        <div style={{ marginBottom: 40 }}>
-          <ChevronFlow steps={project.chevronSteps} />
-        </div>
-
-        {/* Diagram */}
-        {project.diagramType === 'async' && project.asyncPaths && (
+        {/* Side-by-side: chevron left, diagram right */}
+        {project.diagramSideBySide && project.diagramType === 'waterfall' && project.waterfallNodes ? (
           <div
             style={{
-              background: 'var(--canvas-subtle)',
-              border: '1px solid var(--canvas-border)',
-              borderRadius: 10,
-              padding: '28px 32px',
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: 24,
               marginBottom: 40,
             }}
           >
-            <AsyncDiagram paths={project.asyncPaths} />
+            <div
+              style={{
+                background: 'var(--canvas-subtle)',
+                border: '1px solid var(--canvas-border)',
+                borderRadius: 10,
+                padding: '28px 32px',
+              }}
+            >
+              <ChevronFlow steps={project.chevronSteps} />
+            </div>
+            <div
+              style={{
+                background: 'var(--canvas-subtle)',
+                border: '1px solid var(--canvas-border)',
+                borderRadius: 10,
+                padding: '28px 32px',
+              }}
+            >
+              <WaterfallDiagram nodes={project.waterfallNodes} title="Execution flow" />
+            </div>
           </div>
-        )}
+        ) : (
+          <>
+            <div style={{ marginBottom: 40 }}>
+              <ChevronFlow steps={project.chevronSteps} />
+            </div>
 
-        {project.diagramType === 'waterfall' && project.waterfallNodes && (
-          <div
-            style={{
-              background: 'var(--canvas-subtle)',
-              border: '1px solid var(--canvas-border)',
-              borderRadius: 10,
-              padding: '28px 32px',
-              marginBottom: 40,
-            }}
-          >
-            <WaterfallDiagram nodes={project.waterfallNodes} title="Execution flow" />
-          </div>
+            {project.diagramType === 'async' && project.asyncPaths && (
+              <div
+                style={{
+                  background: 'var(--canvas-subtle)',
+                  border: '1px solid var(--canvas-border)',
+                  borderRadius: 10,
+                  padding: '28px 32px',
+                  marginBottom: 40,
+                }}
+              >
+                <AsyncDiagram paths={project.asyncPaths} />
+              </div>
+            )}
+
+            {project.diagramType === 'waterfall' && project.waterfallNodes && (
+              <div
+                style={{
+                  background: 'var(--canvas-subtle)',
+                  border: '1px solid var(--canvas-border)',
+                  borderRadius: 10,
+                  padding: '28px 32px',
+                  marginBottom: 40,
+                }}
+              >
+                <WaterfallDiagram nodes={project.waterfallNodes} title="Execution flow" />
+              </div>
+            )}
+          </>
         )}
 
         {/* Callout */}
