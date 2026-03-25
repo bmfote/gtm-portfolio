@@ -32,7 +32,6 @@ export function ProjectCard({
           border: '1px solid var(--canvas-border)',
           borderRadius: 10,
           padding: '28px 28px 24px',
-          fontFamily: 'var(--font-mono)',
           height: '100%',
           display: 'flex',
           flexDirection: 'column',
@@ -65,6 +64,7 @@ export function ProjectCard({
                 border: '1px solid var(--accent)',
                 borderRadius: 3,
                 padding: '2px 7px',
+                fontFamily: 'var(--font-mono)',
               }}
             >
               {tag}
@@ -109,6 +109,7 @@ export function ProjectCard({
                 border: '1px solid var(--canvas-border)',
                 borderRadius: 4,
                 padding: '2px 8px',
+                fontFamily: 'var(--font-mono)',
               }}
             >
               {tool}
@@ -128,12 +129,12 @@ export function ProjectCard({
             }}
           >
             {nodeCount && (
-              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+              <span style={{ fontSize: 12, color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
                 <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{nodeCount}</span> nodes
               </span>
             )}
             {workflowCount && (
-              <span style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+              <span style={{ fontSize: 12, color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
                 <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{workflowCount}</span> workflows
               </span>
             )}

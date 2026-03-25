@@ -20,7 +20,6 @@ export function ContactSplit({ headline, subtext, links }: ContactSplitProps) {
         gridTemplateColumns: '1fr 1fr',
         gap: 48,
         alignItems: 'start',
-        fontFamily: 'var(--font-mono)',
       }}
     >
       <div>

@@ -12,7 +12,6 @@ export function ToolCard({ icon, name, description }: ToolCardProps) {
         border: '1px solid var(--canvas-border)',
         borderRadius: 8,
         padding: '18px 20px',
-        fontFamily: 'var(--font-mono)',
         display: 'flex',
         flexDirection: 'column',
         gap: 8,
@@ -24,6 +23,7 @@ export function ToolCard({ icon, name, description }: ToolCardProps) {
           fontSize: 13,
           fontWeight: 700,
           color: 'var(--text-primary)',
+          fontFamily: 'var(--font-mono)',
         }}
       >
         {name}

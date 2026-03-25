@@ -72,7 +72,6 @@ export default async function ProjectPage({
 
         <h1
           style={{
-            ...mono,
             fontSize: 'clamp(28px, 4vw, 44px)',
             fontWeight: 700,
             color: 'var(--text-primary)',
@@ -85,7 +84,6 @@ export default async function ProjectPage({
 
         <p
           style={{
-            ...mono,
             fontSize: 17,
             color: 'var(--accent)',
             lineHeight: 1.6,
@@ -119,7 +117,6 @@ export default async function ProjectPage({
         <SectionLabel>The Problem</SectionLabel>
         <p
           style={{
-            ...mono,
             fontSize: 15,
             color: 'var(--text-secondary)',
             lineHeight: 1.8,
@@ -142,7 +139,6 @@ export default async function ProjectPage({
         <SectionLabel>How It Works</SectionLabel>
         <h2
           style={{
-            ...mono,
             fontSize: 22,
             fontWeight: 700,
             color: 'var(--text-primary)',
@@ -219,8 +215,7 @@ export default async function ProjectPage({
                 </div>
                 <p
                   style={{
-                    ...mono,
-                    fontSize: 13,
+                    fontSize: 14,
                     color: 'var(--text-secondary)',
                     lineHeight: 1.7,
                     margin: '0 0 16px',

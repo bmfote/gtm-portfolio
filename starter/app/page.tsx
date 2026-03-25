@@ -45,21 +45,17 @@ const contactLinks = [
 
 export default function Home() {
   return (
-    <div className="container" style={{ paddingTop: 80, paddingBottom: 100 }}>
+    <div className="container" style={{ paddingTop: 56, paddingBottom: 100 }}>
 
       {/* Hero */}
-      <section style={{ marginBottom: 100 }}>
-        <p style={{ color: 'var(--green)', fontSize: 13, marginBottom: 12, fontFamily: 'var(--font-mono)' }}>
-          <span className="terminal-prompt">whoami</span>
-        </p>
+      <section style={{ marginBottom: 40 }}>
         <h1
           style={{
-            fontSize: 'clamp(32px, 5vw, 52px)',
+            fontSize: 'clamp(28px, 3.5vw, 44px)',
             fontWeight: 700,
             color: 'var(--text-primary)',
             lineHeight: 1.15,
-            margin: '0 0 20px',
-            fontFamily: 'var(--font-mono)',
+            margin: '0 0 16px',
           }}
         >
           I build GTM systems.<br />
@@ -69,10 +65,9 @@ export default function Home() {
           style={{
             fontSize: 16,
             color: 'var(--text-secondary)',
-            maxWidth: 560,
+            maxWidth: 540,
             lineHeight: 1.75,
-            margin: '0 0 32px',
-            fontFamily: 'var(--font-mono)',
+            margin: '0 0 24px',
           }}
         >
           GTM Engineer based in Lenexa, KS. I wire together AI, automation, and signal detection
@@ -87,11 +82,9 @@ export default function Home() {
               borderRadius: 6,
               background: 'var(--accent)',
               color: '#0D1117',
-              fontSize: 13,
-              fontWeight: 700,
+              fontSize: 14,
+              fontWeight: 600,
               textDecoration: 'none',
-              fontFamily: 'var(--font-mono)',
-              letterSpacing: '0.04em',
             }}
           >
             see the systems →
@@ -103,9 +96,8 @@ export default function Home() {
               borderRadius: 6,
               border: '1px solid var(--canvas-border)',
               color: 'var(--text-primary)',
-              fontSize: 13,
+              fontSize: 14,
               textDecoration: 'none',
-              fontFamily: 'var(--font-mono)',
             }}
           >
             get in touch
@@ -114,30 +106,8 @@ export default function Home() {
       </section>
 
       {/* Projects grid */}
-      <section id="projects" style={{ marginBottom: 100 }}>
+      <section id="projects" style={{ marginBottom: 80 }}>
         <SectionLabel>GTM Systems</SectionLabel>
-        <h2
-          style={{
-            fontSize: 28,
-            fontWeight: 700,
-            color: 'var(--text-primary)',
-            margin: '0 0 8px',
-            fontFamily: 'var(--font-mono)',
-          }}
-        >
-          Built. Running. Measurable.
-        </h2>
-        <p
-          style={{
-            fontSize: 14,
-            color: 'var(--text-secondary)',
-            margin: '0 0 40px',
-            fontFamily: 'var(--font-mono)',
-            lineHeight: 1.7,
-          }}
-        >
-          Four systems, each solving a real pipeline problem. Every node documented.
-        </p>
 
         <div
           style={{

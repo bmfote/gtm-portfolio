@@ -13,7 +13,6 @@ export function RuleCard({ emoji, title, description }: RuleCardProps) {
         borderLeft: '3px solid var(--accent)',
         borderRadius: '0 8px 8px 0',
         padding: '20px 24px',
-        fontFamily: 'var(--font-mono)',
       }}
     >
       <div style={{ fontSize: 20, marginBottom: 10 }}>{emoji}</div>
@@ -22,8 +21,9 @@ export function RuleCard({ emoji, title, description }: RuleCardProps) {
           fontSize: 13,
           fontWeight: 700,
           color: 'var(--text-primary)',
-          letterSpacing: '0.04em',
+          letterSpacing: '0.02em',
           marginBottom: 8,
+          fontFamily: 'var(--font-sans)',
         }}
       >
         {title}

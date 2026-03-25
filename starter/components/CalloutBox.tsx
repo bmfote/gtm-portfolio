@@ -11,8 +11,7 @@ export function CalloutBox({ children }: CalloutBoxProps) {
         borderRadius: '0 6px 6px 0',
         padding: '16px 20px',
         margin: '0',
-        fontFamily: 'var(--font-mono)',
-        fontSize: 14,
+        fontSize: 15,
         color: 'var(--text-secondary)',
         lineHeight: 1.7,
       }}
