@@ -14,8 +14,8 @@ export const inboundICPRouter: ProjectData = {
   ],
 
   tags: [
-    { label: 'INBOUND', color: 'blue' },
-    { label: 'PIPELINE GENERATION', color: 'muted' },
+    { label: 'INBOUND', color: 'teal' },
+    { label: 'PIPELINE GENERATION', color: 'blue' },
   ],
 
   chevronSteps: ['Lead Received', 'Company Enriched', 'ICP Scored', 'Routed + Responded'],

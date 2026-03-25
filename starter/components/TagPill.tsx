@@ -1,7 +1,7 @@
 const TAG_COLORS: Record<string, string> = {
   amber: '#D29922',
   blue: '#58A6FF',
-  muted: '#8B949E',
+  teal: '#2DD4BF',
 }
 
 interface TagPillProps {
