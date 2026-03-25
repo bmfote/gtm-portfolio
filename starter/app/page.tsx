@@ -143,8 +143,8 @@ export default function Home() {
       {/* Contact */}
       <section>
         <ContactSplit
-          headline="Let's build something that runs while you sleep."
-          subtext="I'm open to GTM Engineering, Revenue Operations, and automation consulting roles. If you're building a serious outbound motion, let's talk."
+          headline="Let's build the GTM system your team actually runs on."
+          subtext="Open to GTM Engineering, Revenue Operations, and automation consulting roles. If your team is leaving pipeline on the table because the system isn't built yet — let's talk."
           links={contactLinks}
         />
       </section>
