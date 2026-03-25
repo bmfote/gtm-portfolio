@@ -107,35 +107,20 @@ export default function Home() {
           into systems that find, qualify, and engage the right leads.
         </p>
 
-        <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
-          <a
-            href="#projects"
-            style={{
-              padding: '10px 24px',
-              borderRadius: 6,
-              background: 'var(--accent)',
-              color: '#0D1117',
-              fontSize: 14,
-              fontWeight: 600,
-              textDecoration: 'none',
-            }}
-          >
-            see the systems →
-          </a>
-          <a
-            href="mailto:battersonsales@gmail.com"
-            style={{
-              padding: '10px 24px',
-              borderRadius: 6,
-              border: '1px solid var(--canvas-border)',
-              color: 'var(--text-primary)',
-              fontSize: 14,
-              textDecoration: 'none',
-            }}
-          >
-            get in touch
-          </a>
-        </div>
+        <a
+          href="mailto:battersonsales@gmail.com"
+          style={{
+            padding: '10px 24px',
+            borderRadius: 6,
+            border: '1px solid var(--canvas-border)',
+            color: 'var(--text-primary)',
+            fontSize: 14,
+            textDecoration: 'none',
+            display: 'inline-block',
+          }}
+        >
+          get in touch
+        </a>
       </section>
 
       {/* Projects grid */}
