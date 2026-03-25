@@ -57,7 +57,6 @@ export interface ProjectData {
   workflows?: WorkflowBlock[]
   loomId?: string
   loomAspect?: string
-  diagramSideBySide?: boolean
   diagramType: 'async' | 'waterfall' | 'none'
   asyncPaths?: AsyncPath[]
   waterfallNodes?: WaterfallNode[]
