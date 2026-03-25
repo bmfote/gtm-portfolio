@@ -66,7 +66,7 @@ export default async function ProjectPage({
       <section style={{ marginBottom: 64 }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 20 }}>
           {project.tags.map(tag => (
-            <TagPill key={tag.label} color={tag.color}>{tag.label}</TagPill>
+            <TagPill key={tag.label}>{tag.label}</TagPill>
           ))}
         </div>
 

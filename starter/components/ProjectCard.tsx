@@ -3,13 +3,6 @@
 import Link from 'next/link'
 import type { Tag } from '@/content/projects/types'
 
-const colorMap: Record<string, string> = {
-  teal: '#2DD4BF',
-  green: '#4EC373',
-  red: '#F85149',
-  orange: '#F0883E',
-}
-
 interface ProjectCardProps {
   slug: string
   title: string
@@ -60,27 +53,24 @@ export function ProjectCard({
       >
         {/* Tags */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-          {tags.map(tag => {
-            const hex = colorMap[tag.color]
-            return (
-              <span
-                key={tag.label}
-                style={{
-                  fontSize: 10,
-                  fontWeight: 600,
-                  letterSpacing: '0.08em',
-                  textTransform: 'uppercase',
-                  color: hex,
-                  border: `1px solid ${hex}`,
-                  borderRadius: 3,
-                  padding: '2px 7px',
-                  fontFamily: 'var(--font-mono)',
-                }}
-              >
-                {tag.label}
-              </span>
-            )
-          })}
+          {tags.map(tag => (
+            <span
+              key={tag.label}
+              style={{
+                fontSize: 10,
+                fontWeight: 600,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                color: 'var(--accent)',
+                border: '1px solid var(--accent)',
+                borderRadius: 3,
+                padding: '2px 7px',
+                fontFamily: 'var(--font-mono)',
+              }}
+            >
+              {tag.label}
+            </span>
+          ))}
         </div>
 
         {/* Title + oneliner */}
