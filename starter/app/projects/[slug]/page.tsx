@@ -274,7 +274,7 @@ export default async function ProjectPage({
           <div
             style={{
               position: 'relative',
-              paddingBottom: '56.25%',
+              paddingBottom: project.loomAspect ?? '56.25%',
               height: 0,
               borderRadius: 10,
               overflow: 'hidden',

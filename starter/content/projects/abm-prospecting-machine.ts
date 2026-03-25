@@ -73,6 +73,9 @@ export const abmProspectingMachine: ProjectData = {
     },
   ],
 
+  loomId: '8057f4d8f4b04a3890a4d04702b67de2',
+  loomAspect: '64.74820143884892%',
+
   diagramType: 'async',
   asyncPaths: [
     {

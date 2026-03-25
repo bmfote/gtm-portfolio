@@ -56,6 +56,7 @@ export interface ProjectData {
   chevronSteps: string[]
   workflows?: WorkflowBlock[]
   loomId?: string
+  loomAspect?: string
   diagramType: 'async' | 'waterfall' | 'none'
   asyncPaths?: AsyncPath[]
   waterfallNodes?: WaterfallNode[]
