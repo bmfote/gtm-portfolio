@@ -95,7 +95,7 @@ export default async function ProjectPage({
         </p>
 
         {/* Meta row */}
-        <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap', alignItems: 'center' }}>
           {project.nodeCount && (
             <span style={{ ...mono, fontSize: 13, color: 'var(--text-secondary)' }}>
               <span style={{ color: 'var(--accent)', fontWeight: 700 }}>{project.nodeCount}</span> nodes
@@ -109,12 +109,52 @@ export default async function ProjectPage({
           <span style={{ ...mono, fontSize: 13, color: 'var(--text-secondary)' }}>
             {project.stack.map(s => s.name).join(' · ')}
           </span>
+          {project.loomId && (
+            <a
+              href="#walkthrough"
+              style={{
+                ...mono,
+                fontSize: 12,
+                fontWeight: 600,
+                color: 'var(--accent)',
+                border: '1px solid var(--accent)',
+                borderRadius: 4,
+                padding: '4px 12px',
+                textDecoration: 'none',
+                letterSpacing: '0.04em',
+              }}
+            >
+              ▶ watch walkthrough
+            </a>
+          )}
         </div>
+      </section>
+
+      {/* The Problem */}
+      <section style={{ marginBottom: 64 }}>
+        <SectionLabel>The Problem</SectionLabel>
+        <p
+          style={{
+            fontSize: 15,
+            color: 'var(--text-secondary)',
+            lineHeight: 1.8,
+            maxWidth: 680,
+            margin: 0,
+          }}
+        >
+          {project.problem}
+        </p>
+      </section>
+
+      {/* Stack */}
+      <section style={{ marginBottom: 64 }}>
+        <SectionLabel>Stack</SectionLabel>
+        <ToolCardGrid tools={project.stack} />
       </section>
 
       {/* Loom walkthrough */}
       {project.loomId && (
-        <section style={{ marginBottom: 64 }}>
+        <section id="walkthrough" style={{ marginBottom: 64 }}>
           <SectionLabel>Walkthrough</SectionLabel>
           <div
             style={{
@@ -141,28 +181,6 @@ export default async function ProjectPage({
           </div>
         </section>
       )}
-
-      {/* The Problem */}
-      <section style={{ marginBottom: 64 }}>
-        <SectionLabel>The Problem</SectionLabel>
-        <p
-          style={{
-            fontSize: 15,
-            color: 'var(--text-secondary)',
-            lineHeight: 1.8,
-            maxWidth: 680,
-            margin: 0,
-          }}
-        >
-          {project.problem}
-        </p>
-      </section>
-
-      {/* Stack */}
-      <section style={{ marginBottom: 64 }}>
-        <SectionLabel>Stack</SectionLabel>
-        <ToolCardGrid tools={project.stack} />
-      </section>
 
       {/* How It Works */}
       <section style={{ marginBottom: 64 }}>
