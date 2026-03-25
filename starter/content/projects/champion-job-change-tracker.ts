@@ -20,7 +20,6 @@ export const championJobChangeTracker: ProjectData = {
   tags: [
     { label: 'OUTBOUND', color: 'teal' },
     { label: 'JOB CHANGE SIGNAL', color: 'orange' },
-    { label: 'LIVE ICP CONFIG', color: 'red' },
   ],
   nodeCount: 27,
   workflowCount: 3,

@@ -19,7 +19,6 @@ export const abmProspectingMachine: ProjectData = {
   tags: [
     { label: 'OUTBOUND', color: 'teal' },
     { label: 'PIPELINE GENERATION', color: 'green' },
-    { label: 'LIVE ICP CONFIG', color: 'red' },
   ],
   nodeCount: 21,
 

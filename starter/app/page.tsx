@@ -11,7 +11,6 @@ const projects = [
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },
       { label: 'PIPELINE GENERATION', color: 'green' as const },
-      { label: 'LIVE ICP CONFIG', color: 'red' as const },
     ],
     nodeCount: 21,
   },
@@ -23,7 +22,6 @@ const projects = [
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },
       { label: 'JOB CHANGE SIGNAL', color: 'orange' as const },
-      { label: 'LIVE ICP CONFIG', color: 'red' as const },
     ],
     nodeCount: 27,
     workflowCount: 3,
@@ -36,7 +34,6 @@ const projects = [
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },
       { label: 'GROWTH SIGNAL', color: 'orange' as const },
-      { label: 'LIVE ICP CONFIG', color: 'red' as const },
     ],
     nodeCount: 49,
     workflowCount: 4,
@@ -49,7 +46,6 @@ const projects = [
     tags: [
       { label: 'PIPELINE PRIORITIZATION', color: 'teal' as const },
       { label: 'SCORING ENGINE', color: 'green' as const },
-      { label: 'LIVE ICP CONFIG', color: 'red' as const },
     ],
   },
 ]

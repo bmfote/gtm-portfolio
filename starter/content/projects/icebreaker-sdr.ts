@@ -21,7 +21,6 @@ export const icebreakerSDR: ProjectData = {
   tags: [
     { label: 'OUTBOUND', color: 'teal' },
     { label: 'GROWTH SIGNAL', color: 'orange' },
-    { label: 'LIVE ICP CONFIG', color: 'red' },
   ],
   nodeCount: 49,
   workflowCount: 4,
