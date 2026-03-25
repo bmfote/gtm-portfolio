@@ -29,7 +29,7 @@ const projects = [
   },
   {
     slug: 'icebreaker-sdr',
-    title: 'Growth Triggered Icebreaker',
+    title: 'Growth Signal Icebreaker',
     oneliner: 'Growth signal detected. Personalized icebreaker written. Zero manual steps.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
     tags: [
