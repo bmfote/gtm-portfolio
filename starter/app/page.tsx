@@ -5,14 +5,15 @@ import { ContactSplit } from '@/components/ContactSplit'
 const projects = [
   {
     slug: 'abm-prospecting-machine',
-    title: 'ABM Prospecting Machine',
-    oneliner: 'You click one button. 5–20 minutes later, enriched leads are in your CRM.',
+    title: 'ICP Click-to-CRM',
+    oneliner: 'Define your ICP. Click once. Enriched leads land in your CRM.',
     stack: ['n8n', 'Pronto', 'Instantly', 'Claude'],
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },
       { label: 'PIPELINE GENERATION', color: 'green' as const },
     ],
     nodeCount: 21,
+    workflowCount: 4,
   },
   {
     slug: 'champion-job-change-tracker',
@@ -28,8 +29,8 @@ const projects = [
   },
   {
     slug: 'icebreaker-sdr',
-    title: 'Growth-Triggered Icebreaker',
-    oneliner: 'Signal detected Monday 9am. Lead enrolled in outbound sequence before noon. No human touchpoints.',
+    title: 'Growth Triggered Icebreaker',
+    oneliner: 'Detects companies actively growing, finds matching decision-makers, generates a unique icebreaker using 3 layers of context, and enrolls them in a sequence — every Monday, zero manual steps.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },

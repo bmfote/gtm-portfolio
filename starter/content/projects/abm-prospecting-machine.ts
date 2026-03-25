@@ -2,8 +2,8 @@ import { ProjectData } from './types'
 
 export const abmProspectingMachine: ProjectData = {
   slug: 'abm-prospecting-machine',
-  title: 'ABM Prospecting Machine',
-  oneliner: 'You click one button. 5–20 minutes later, enriched leads are in your CRM.',
+  title: 'ICP Click-to-CRM',
+  oneliner: 'Define your ICP. Click once. Enriched leads land in your CRM.',
   problem:
     'Sales teams spend hours manually searching LinkedIn and databases for target accounts, tracking down decision-makers, and hunting for verified emails. Slow, expensive, impossible at scale.',
   callout:
@@ -21,6 +21,7 @@ export const abmProspectingMachine: ProjectData = {
     { label: 'PIPELINE GENERATION', color: 'green' },
   ],
   nodeCount: 21,
+  workflowCount: 4,
 
   chevronSteps: ['Trigger Fired', 'Companies Received', 'Leads Enriched', 'CRM Delivered'],
 
