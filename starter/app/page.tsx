@@ -91,8 +91,8 @@ export default function Home() {
             margin: '0 0 16px',
           }}
         >
-          I build GTM systems.<br />
-          <span style={{ color: 'var(--accent)' }}>The kind that run while you sleep.</span>
+          I build the system<br />
+          <span style={{ color: 'var(--accent)' }}>between your signals and your pipeline.</span>
         </h1>
         <p
           style={{
@@ -104,7 +104,7 @@ export default function Home() {
           }}
         >
           GTM Engineer based in Lenexa, KS. I wire together AI, automation, and signal detection
-          into systems that find, qualify, and engage the right leads — without reps lifting a finger.
+          into systems that find, qualify, and engage the right leads.
         </p>
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
