@@ -9,8 +9,8 @@ const projects = [
     oneliner: 'Define your ICP. Click once. Enriched leads land in your CRM.',
     stack: ['n8n', 'Pronto', 'Instantly', 'Claude'],
     tags: [
-      { label: 'OUTBOUND', color: 'teal' as const },
-      { label: 'PIPELINE GENERATION', color: 'green' as const },
+      { label: 'OUTBOUND', color: 'amber' as const },
+      { label: 'PIPELINE GENERATION', color: 'muted' as const },
     ],
     nodeCount: 21,
     workflowCount: 4,
@@ -21,8 +21,8 @@ const projects = [
     oneliner: 'Champion moves jobs. Claude scores the fit. Hot ones hit sequence.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude'],
     tags: [
-      { label: 'OUTBOUND', color: 'teal' as const },
-      { label: 'JOB CHANGE SIGNAL', color: 'orange' as const },
+      { label: 'OUTBOUND', color: 'amber' as const },
+      { label: 'JOB CHANGE SIGNAL', color: 'muted' as const },
     ],
     nodeCount: 27,
     workflowCount: 3,
@@ -33,8 +33,8 @@ const projects = [
     oneliner: 'Growth signal detected. Personalized icebreaker written. Zero manual steps.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
     tags: [
-      { label: 'OUTBOUND', color: 'teal' as const },
-      { label: 'GROWTH SIGNAL', color: 'orange' as const },
+      { label: 'OUTBOUND', color: 'amber' as const },
+      { label: 'GROWTH SIGNAL', color: 'muted' as const },
     ],
     nodeCount: 49,
     workflowCount: 4,
@@ -45,8 +45,8 @@ const projects = [
     oneliner: 'Every account scored across 5 signals. Next action decided. Message pre-written.',
     stack: ['Clay'],
     tags: [
-      { label: 'PIPELINE PRIORITIZATION', color: 'teal' as const },
-      { label: 'SCORING ENGINE', color: 'green' as const },
+      { label: 'PIPELINE PRIORITY', color: 'purple' as const },
+      { label: 'SCORING ENGINE', color: 'muted' as const },
     ],
   },
   {
@@ -55,8 +55,8 @@ const projects = [
     oneliner: 'Lead arrives. ICP scored. Routed to the right rep with a response already sent.',
     stack: ['Clay'],
     tags: [
-      { label: 'INBOUND', color: 'teal' as const },
-      { label: 'PIPELINE GENERATION', color: 'green' as const },
+      { label: 'INBOUND', color: 'blue' as const },
+      { label: 'PIPELINE GENERATION', color: 'muted' as const },
     ],
   },
   {
@@ -65,8 +65,8 @@ const projects = [
     oneliner: 'Signal detected. GTM play written. Lead enrolled in sequence.',
     stack: ['Clay'],
     tags: [
-      { label: 'OUTBOUND', color: 'teal' as const },
-      { label: 'SIGNAL-TRIGGERED', color: 'orange' as const },
+      { label: 'OUTBOUND', color: 'amber' as const },
+      { label: 'SIGNAL-TRIGGERED', color: 'muted' as const },
     ],
   },
 ]

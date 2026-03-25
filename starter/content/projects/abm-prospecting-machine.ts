@@ -17,8 +17,8 @@ export const abmProspectingMachine: ProjectData = {
   ],
 
   tags: [
-    { label: 'OUTBOUND', color: 'teal' },
-    { label: 'PIPELINE GENERATION', color: 'green' },
+    { label: 'OUTBOUND', color: 'amber' },
+    { label: 'PIPELINE GENERATION', color: 'muted' },
   ],
   nodeCount: 21,
   workflowCount: 4,

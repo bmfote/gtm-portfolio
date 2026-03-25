@@ -36,7 +36,7 @@ export interface WorkflowBlock {
   steps: string[]
 }
 
-export type TagColor = 'teal' | 'green' | 'red' | 'orange'
+export type TagColor = 'amber' | 'blue' | 'purple' | 'muted'
 
 export interface Tag {
   label: string

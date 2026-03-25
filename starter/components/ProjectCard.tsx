@@ -53,24 +53,30 @@ export function ProjectCard({
       >
         {/* Tags */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
-          {tags.map(tag => (
-            <span
-              key={tag.label}
-              style={{
-                fontSize: 10,
-                fontWeight: 600,
-                letterSpacing: '0.08em',
-                textTransform: 'uppercase',
-                color: 'var(--accent)',
-                border: '1px solid var(--accent)',
-                borderRadius: 3,
-                padding: '2px 7px',
-                fontFamily: 'var(--font-mono)',
-              }}
-            >
-              {tag.label}
-            </span>
-          ))}
+          {tags.map(tag => {
+            const tagColors: Record<string, string> = {
+              amber: '#D29922', blue: '#58A6FF', purple: '#A371F7', muted: '#8B949E',
+            }
+            const c = (tag.color && tagColors[tag.color]) ?? tagColors.blue
+            return (
+              <span
+                key={tag.label}
+                style={{
+                  fontSize: 10,
+                  fontWeight: 600,
+                  letterSpacing: '0.08em',
+                  textTransform: 'uppercase',
+                  color: c,
+                  border: `1px solid ${c}`,
+                  borderRadius: 3,
+                  padding: '2px 7px',
+                  fontFamily: 'var(--font-mono)',
+                }}
+              >
+                {tag.label}
+              </span>
+            )
+          })}
         </div>
 
         {/* Title + oneliner */}

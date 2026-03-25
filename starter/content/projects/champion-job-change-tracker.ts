@@ -17,8 +17,8 @@ export const championJobChangeTracker: ProjectData = {
   ],
 
   tags: [
-    { label: 'OUTBOUND', color: 'teal' },
-    { label: 'JOB CHANGE SIGNAL', color: 'orange' },
+    { label: 'OUTBOUND', color: 'amber' },
+    { label: 'JOB CHANGE SIGNAL', color: 'muted' },
   ],
   nodeCount: 27,
   workflowCount: 3,
