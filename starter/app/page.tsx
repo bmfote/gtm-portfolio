@@ -10,7 +10,7 @@ const projects = [
     stack: ['n8n', 'Pronto', 'Instantly', 'Claude'],
     tags: [
       { label: 'OUTBOUND', color: 'amber' as const },
-      { label: 'PIPELINE GENERATION', color: 'red' as const },
+      { label: 'PIPELINE GENERATION', color: 'muted' as const },
     ],
     nodeCount: 21,
     workflowCount: 4,
@@ -22,7 +22,7 @@ const projects = [
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude'],
     tags: [
       { label: 'OUTBOUND', color: 'amber' as const },
-      { label: 'JOB CHANGE SIGNAL', color: 'green' as const },
+      { label: 'JOB CHANGE SIGNAL', color: 'muted' as const },
     ],
     nodeCount: 27,
     workflowCount: 3,
@@ -34,7 +34,7 @@ const projects = [
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
     tags: [
       { label: 'OUTBOUND', color: 'amber' as const },
-      { label: 'GROWTH SIGNAL', color: 'green' as const },
+      { label: 'GROWTH SIGNAL', color: 'muted' as const },
     ],
     nodeCount: 49,
     workflowCount: 4,
@@ -45,7 +45,7 @@ const projects = [
     oneliner: 'Every account scored across 5 signals. Next action decided. Message pre-written.',
     stack: ['Clay'],
     tags: [
-      { label: 'PIPELINE PRIORITY', color: 'red' as const },
+      { label: 'PIPELINE PRIORITY', color: 'muted' as const },
       { label: 'ICP SCORING', color: 'muted' as const },
     ],
   },
@@ -56,7 +56,7 @@ const projects = [
     stack: ['Clay'],
     tags: [
       { label: 'INBOUND', color: 'blue' as const },
-      { label: 'PIPELINE GENERATION', color: 'red' as const },
+      { label: 'PIPELINE GENERATION', color: 'muted' as const },
     ],
   },
   {
@@ -66,7 +66,7 @@ const projects = [
     stack: ['Clay'],
     tags: [
       { label: 'OUTBOUND', color: 'amber' as const },
-      { label: 'SIGNAL-TRIGGERED', color: 'green' as const },
+      { label: 'SIGNAL-TRIGGERED', color: 'muted' as const },
     ],
   },
 ]

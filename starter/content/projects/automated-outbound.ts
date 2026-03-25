@@ -15,7 +15,7 @@ export const automatedOutbound: ProjectData = {
 
   tags: [
     { label: 'OUTBOUND', color: 'amber' },
-    { label: 'SIGNAL-TRIGGERED', color: 'green' },
+    { label: 'SIGNAL-TRIGGERED', color: 'muted' },
   ],
 
   chevronSteps: ['Signal Detected', 'ICP Scored', 'GTM Play Built', 'Sequence Enrolled'],
