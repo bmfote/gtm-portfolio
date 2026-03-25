@@ -78,6 +78,8 @@ export const automatedOutbound: ProjectData = {
     },
   ],
 
+  loomId: '0f03506adac543e59a69fe0fc3e4e414',
+
   diagramType: 'waterfall',
   waterfallNodes: [
     { label: 'Signal fires: AI keyword / G2 review / hiring signal' },
