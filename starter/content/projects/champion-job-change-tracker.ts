@@ -2,9 +2,8 @@ import { ProjectData } from './types'
 
 export const championJobChangeTracker: ProjectData = {
   slug: 'champion-job-change-tracker',
-  title: 'Champion Job Change Tracker',
-  oneliner:
-    'Monday morning sync. Real-time detection. AI scores every change. Hot ones go straight to sequence.',
+  title: 'Champion Reactivation',
+  oneliner: 'Champion moves jobs. Claude scores the fit. Hot ones hit sequence.',
   problem:
     'Former champions are your warmest leads — they already know your product and trust you. But tracking hundreds of past champions for job changes manually is impossible. This system does it automatically and routes the right ones into a sales sequence within hours of detection.',
   callout:

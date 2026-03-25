@@ -3,8 +3,7 @@ import { ProjectData } from './types'
 export const icebreakerSDR: ProjectData = {
   slug: 'icebreaker-sdr',
   title: 'Growth Triggered Icebreaker',
-  oneliner:
-    'Detects companies actively growing, finds matching decision-makers, generates a unique icebreaker using 3 layers of context, and enrolls them in a sequence — every Monday, zero manual steps.',
+  oneliner: 'Growth signal detected. Personalized icebreaker written. Zero manual steps.',
   problem:
     'Generic cold emails get ignored. Truly personalized ones take 10+ minutes each to write. AI SDR tools burn LLM budget on undeliverable emails and template copy. This system detects companies actively growing, finds matching decision-makers, generates a unique icebreaker per lead using 3 layers of context, and enrolls them in outbound. Every Monday. Zero manual steps.',
   callout:

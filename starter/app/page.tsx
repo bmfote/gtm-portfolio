@@ -17,8 +17,8 @@ const projects = [
   },
   {
     slug: 'champion-job-change-tracker',
-    title: 'Champion Job Change Tracker',
-    oneliner: 'Monday morning sync. Real-time detection. AI scores every change. Hot ones go straight to sequence.',
+    title: 'Champion Reactivation',
+    oneliner: 'Champion moves jobs. Claude scores the fit. Hot ones hit sequence.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude'],
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },
@@ -30,7 +30,7 @@ const projects = [
   {
     slug: 'icebreaker-sdr',
     title: 'Growth Triggered Icebreaker',
-    oneliner: 'Detects companies actively growing, finds matching decision-makers, generates a unique icebreaker using 3 layers of context, and enrolls them in a sequence — every Monday, zero manual steps.',
+    oneliner: 'Growth signal detected. Personalized icebreaker written. Zero manual steps.',
     stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
     tags: [
       { label: 'OUTBOUND', color: 'teal' as const },
@@ -41,8 +41,8 @@ const projects = [
   },
   {
     slug: 'next-best-action',
-    title: 'Next Best Action System',
-    oneliner: 'Multi-signal scoring, governance gates, and a ranked daily action queue. Reps work the right accounts, in the right order, every day.',
+    title: 'Next Best Action',
+    oneliner: 'Every account scored across 5 signals. Next action decided. Message pre-written.',
     stack: ['Clay'],
     tags: [
       { label: 'PIPELINE PRIORITIZATION', color: 'teal' as const },
