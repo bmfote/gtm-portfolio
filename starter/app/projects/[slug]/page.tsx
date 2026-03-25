@@ -112,6 +112,36 @@ export default async function ProjectPage({
         </div>
       </section>
 
+      {/* Loom walkthrough */}
+      {project.loomId && (
+        <section style={{ marginBottom: 64 }}>
+          <SectionLabel>Walkthrough</SectionLabel>
+          <div
+            style={{
+              position: 'relative',
+              paddingBottom: project.loomAspect ?? '56.25%',
+              height: 0,
+              borderRadius: 10,
+              overflow: 'hidden',
+              border: '1px solid var(--canvas-border)',
+            }}
+          >
+            <iframe
+              src={`https://www.loom.com/embed/${project.loomId}`}
+              frameBorder={0}
+              allowFullScreen
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }}
+            />
+          </div>
+        </section>
+      )}
+
       {/* The Problem */}
       <section style={{ marginBottom: 64 }}>
         <SectionLabel>The Problem</SectionLabel>
@@ -266,36 +296,6 @@ export default async function ProjectPage({
           </div>
         )}
       </section>
-
-      {/* Loom walkthrough */}
-      {project.loomId && (
-        <section style={{ marginBottom: 64 }}>
-          <SectionLabel>Walkthrough</SectionLabel>
-          <div
-            style={{
-              position: 'relative',
-              paddingBottom: project.loomAspect ?? '56.25%',
-              height: 0,
-              borderRadius: 10,
-              overflow: 'hidden',
-              border: '1px solid var(--canvas-border)',
-            }}
-          >
-            <iframe
-              src={`https://www.loom.com/embed/${project.loomId}`}
-              frameBorder={0}
-              allowFullScreen
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-              }}
-            />
-          </div>
-        </section>
-      )}
 
       {/* Key Design Decisions */}
       <section style={{ marginBottom: 64 }}>
