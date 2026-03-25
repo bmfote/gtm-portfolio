@@ -49,6 +49,26 @@ const projects = [
       { label: 'SCORING ENGINE', color: 'green' as const },
     ],
   },
+  {
+    slug: 'inbound-icp-router',
+    title: 'Inbound ICP Router',
+    oneliner: 'Lead arrives. ICP scored. Routed to the right rep with a response already sent.',
+    stack: ['Clay'],
+    tags: [
+      { label: 'INBOUND', color: 'teal' as const },
+      { label: 'PIPELINE GENERATION', color: 'green' as const },
+    ],
+  },
+  {
+    slug: 'automated-outbound',
+    title: 'Automated Outbound',
+    oneliner: 'Signal detected. GTM play written. Lead enrolled in sequence.',
+    stack: ['Clay'],
+    tags: [
+      { label: 'OUTBOUND', color: 'teal' as const },
+      { label: 'SIGNAL-TRIGGERED', color: 'orange' as const },
+    ],
+  },
 ]
 
 const contactLinks = [
@@ -125,7 +145,7 @@ export default function Home() {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
             gap: 20,
           }}
         >
