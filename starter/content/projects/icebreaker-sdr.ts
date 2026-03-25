@@ -19,7 +19,7 @@ export const icebreakerSDR: ProjectData = {
 
   tags: [
     { label: 'OUTBOUND', color: 'amber' },
-    { label: 'GROWTH SIGNAL', color: 'muted' },
+    { label: 'GROWTH SIGNAL', color: 'green' },
   ],
   nodeCount: 49,
   workflowCount: 4,

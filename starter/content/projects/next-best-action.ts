@@ -14,7 +14,7 @@ export const nextBestAction: ProjectData = {
   ],
 
   tags: [
-    { label: 'PIPELINE PRIORITY', color: 'purple' },
+    { label: 'PIPELINE PRIORITY', color: 'muted' },
     { label: 'SCORING ENGINE', color: 'muted' },
   ],
 

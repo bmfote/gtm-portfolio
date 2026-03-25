@@ -55,7 +55,7 @@ export function ProjectCard({
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
           {tags.map(tag => {
             const tagColors: Record<string, string> = {
-              amber: '#D29922', blue: '#58A6FF', purple: '#A371F7', muted: '#8B949E',
+              amber: '#D29922', blue: '#58A6FF', green: '#3FB950', muted: '#8B949E',
             }
             const c = (tag.color && tagColors[tag.color]) ?? tagColors.blue
             return (
