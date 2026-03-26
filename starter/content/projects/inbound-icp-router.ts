@@ -78,6 +78,9 @@ export const inboundICPRouter: ProjectData = {
     },
   ],
 
+  loomId: '3ecdd0a469f24233b5a6cae8ba88fc41',
+  loomAspect: '54.895833333333336%',
+
   diagramType: 'waterfall',
   waterfallNodes: [
     { label: 'Inbound form submitted' },
