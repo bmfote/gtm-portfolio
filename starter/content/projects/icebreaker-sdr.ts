@@ -87,8 +87,8 @@ export const icebreakerSDR: ProjectData = {
     },
   ],
 
-  loomId: '92c9d140e166462f8edcf96d3529fb84',
-  loomAspect: '70.22106631989598%',
+  loomId: '6c5ff496a3724f309b4186bf072e37fe',
+  loomAspect: '54.895833333333336%',
 
   diagramType: 'waterfall',
   waterfallNodes: [

@@ -31,7 +31,7 @@ export function Navigation() {
           fontFamily: 'var(--font-mono)',
         }}
       >
-        matthew batterson
+        MattGTM.Engineer
       </Link>
 
       <div style={{ display: 'flex', gap: 24, alignItems: 'center' }}>
