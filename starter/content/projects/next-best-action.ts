@@ -81,6 +81,9 @@ export const nextBestAction: ProjectData = {
     },
   ],
 
+  loomId: '35941dd9890e44c5b08a6fa0366cb4ff',
+  loomAspect: '54.895833333333336%',
+
   diagramType: 'waterfall',
   waterfallNodes: [
     { label: 'Account enters Clay table' },
