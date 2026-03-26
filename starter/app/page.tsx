@@ -4,6 +4,18 @@ import { ContactSplit } from '@/components/ContactSplit'
 
 const projects = [
   {
+    slug: 'icebreaker-sdr',
+    title: 'Growth Signal Icebreaker',
+    oneliner: 'Growth signal detected. Personalized icebreaker written. Zero manual steps.',
+    stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
+    tags: [
+      { label: 'OUTBOUND', color: 'amber' as const },
+      { label: 'GROWTH SIGNAL', color: 'blue' as const },
+    ],
+    nodeCount: 49,
+    workflowCount: 4,
+  },
+  {
     slug: 'abm-prospecting-machine',
     title: 'ICP Click-to-CRM',
     oneliner: 'Define your ICP. Click once. Enriched leads land in your CRM.',
@@ -26,18 +38,6 @@ const projects = [
     ],
     nodeCount: 27,
     workflowCount: 3,
-  },
-  {
-    slug: 'icebreaker-sdr',
-    title: 'Growth Signal Icebreaker',
-    oneliner: 'Growth signal detected. Personalized icebreaker written. Zero manual steps.',
-    stack: ['n8n', 'Pronto', 'Airtable', 'Claude', 'LaGrowthMachine'],
-    tags: [
-      { label: 'OUTBOUND', color: 'amber' as const },
-      { label: 'GROWTH SIGNAL', color: 'blue' as const },
-    ],
-    nodeCount: 49,
-    workflowCount: 4,
   },
   {
     slug: 'next-best-action',
