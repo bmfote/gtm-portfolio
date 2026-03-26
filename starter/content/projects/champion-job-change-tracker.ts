@@ -68,6 +68,9 @@ export const championJobChangeTracker: ProjectData = {
     },
   ],
 
+  loomId: '888a1159c0434e84bcaf846e0b7112d3',
+  loomAspect: '54.895833333333336%',
+
   diagramType: 'waterfall',
   waterfallNodes: [
     { label: 'Airtable', sublabel: 'champions list' },
