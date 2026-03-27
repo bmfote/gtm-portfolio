@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { SectionLabel } from './SectionLabel'
 
 const logos = [
@@ -17,6 +17,13 @@ const logos = [
 export function LogoMarquee() {
   const doubled = [...logos, ...logos]
   const [hovered, setHovered] = useState<number | null>(null)
+  const trackRef = useRef<HTMLDivElement>(null)
+
+  const setSpeed = (rate: number) => {
+    trackRef.current?.getAnimations().forEach((a) => {
+      a.playbackRate = rate
+    })
+  }
 
   return (
     <section style={{ marginBottom: 48 }}>
@@ -31,7 +38,12 @@ export function LogoMarquee() {
           WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         }}
       >
-        <div className="marquee-track">
+        <div
+          className="marquee-track"
+          ref={trackRef}
+          onMouseEnter={() => setSpeed(0.3)}
+          onMouseLeave={() => setSpeed(1)}
+        >
           {doubled.map((logo, i) => (
             <div
               key={`${logo.name}-${i}`}
