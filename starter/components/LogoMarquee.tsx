@@ -23,7 +23,10 @@ export function LogoMarquee() {
       <SectionLabel>Built With</SectionLabel>
       <div
         style={{
-          overflow: 'hidden',
+          overflowX: 'clip',
+          overflowY: 'visible',
+          paddingTop: 60,
+          marginTop: -60,
           maskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
           WebkitMaskImage: 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
         }}
