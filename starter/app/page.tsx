@@ -1,6 +1,7 @@
 import { SectionLabel } from '@/components/SectionLabel'
 import { ProjectCard } from '@/components/ProjectCard'
 import { ContactSplit } from '@/components/ContactSplit'
+import { LogoMarquee } from '@/components/LogoMarquee'
 
 const projects = [
   {
@@ -122,6 +123,9 @@ export default function Home() {
           get in touch
         </a>
       </section>
+
+      {/* Tools marquee */}
+      <LogoMarquee />
 
       {/* Projects grid */}
       <section id="projects" style={{ marginBottom: 80 }}>

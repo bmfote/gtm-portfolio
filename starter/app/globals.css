@@ -125,6 +125,21 @@ a:hover {
   margin: 2em 0;
 }
 
+/* ── Logo Marquee ── */
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  animation: marquee-scroll 30s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
 /* ── Utilities ── */
 .container {
   max-width: 960px;
