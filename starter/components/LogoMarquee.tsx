@@ -8,7 +8,7 @@ const logos = [
   { name: 'n8n', src: '/logos/n8n.png', width: 48, height: 48, tagline: 'Workflow automation for technical teams' },
   { name: 'Clay', src: '/logos/clay.png', width: 56, height: 44, tagline: 'Creative data enrichment at scale' },
   { name: 'Airtable', src: '/logos/airtable.png', width: 48, height: 48, tagline: 'The spreadsheet-database hybrid' },
-  { name: 'ProntoHQ', src: '/logos/pronto.svg', width: 120, height: 30, tagline: 'Real-time team communication' },
+  { name: 'ProntoHQ', src: '/logos/pronto.svg', width: 120, height: 30, tagline: 'Signal and enrichment tool' },
   { name: 'Anthropic', src: '/logos/anthropic.png', width: 48, height: 48, tagline: 'AI research and safety' },
   { name: 'Apollo', src: '/logos/apollo.jpeg', width: 48, height: 48, tagline: 'Sales intelligence and engagement' },
   { name: 'Findymail', src: '/logos/findymail.png', width: 48, height: 40, tagline: 'Verified email finding' },
